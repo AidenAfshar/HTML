@@ -1,9 +1,5 @@
 
 <!DOCTYPE html>
-<!--
-head: 0
-body: 4            
--->
 <html lang = "en-us">
     <head>
         <title>Passive Income NOW</title>
@@ -14,8 +10,8 @@ body: 4
         <link rel = "icon" type = "image/jpeg" href = "../images/pizza.jpeg"> <!--fix this--> 
         <script src = "../scripts/Scroll.js"> </script>
         <style>
-            h1 {color: lightsalmon; font-size: 70px; margin-bottom: -1.5%;}
-            h2 {color: darkorange;}
+            h1 {color: lightsalmon; font-size: 70px; margin-bottom: -1.5%; animation: titleStrobe .4s infinite;}
+            h2 {color: darkorange; animation: regret 2s}
             p {font-size: 5px; writing-mode: vertical-rl; margin-left: 50%;}
             body {text-align: center; background-image: linear-gradient(burlywood, green, yellow, darkred, blue, pink, orange, burlywood, green, yellow, darkred);}
             table th, td {color: rosybrown; border: 5px solid; text-align: right;}
@@ -26,6 +22,31 @@ body: 4
             img:hover {opacity: 1}
             iframe {width: 1000px; height: 1000px}
             footer {margin-top: 100000px}
+            @keyframes titleStrobe {
+                20% {
+                    color: yellow;
+                    opacity: 70%;
+                }
+                40% {
+                    color: blue;
+                    opacity: 20%;
+                }
+                60% {
+                    color: red;   
+                }
+                100% {
+                    color: lightgreen;
+                }
+            }
+             @keyframes regret {
+                0% {
+                    opacity: 0%;
+                    margin-right: 20%;
+                }
+                100% {
+                    opacity: 100%;
+                    margin-right: 0%;
+                }
         </style>
     </head>
     <body>
