@@ -10,9 +10,10 @@
         <link rel = "icon" type = "image/jpeg" href = "images/bigMoney.jpeg">
         <style>
             h1 {color: royalblue; text-shadow: 0 0 5px #c32148;}
+            #money {animation: imageAppear 2s;}
             p {color: darkkhaki; margin-left: 20%; margin-right:  20%;}
-            body {text-align: center; animation: strobe .5s infinite; background-image: radial-gradient(blue, red, purple, pink, yellow);}
-            img {width: 500px; height: 200px}
+            body {text-align: center; animation: strobe .2s infinite; background-image: radial-gradient(blue, red, purple, pink, yellow);}
+            img {width: 500px; height: 200px; animation: pizzaAnim 2s;}
             .Pizza {color: orange; outline-style: dotted; outline-width: 10px; outline-color: grey;  opacity: 0.5; background-image: linear-gradient(red, black, purple);}
             .Pizza:hover {opacity: 1; color: blue; background-image: url("images/pizza.jpeg"); outline-color: saddlebrown;}
             blockquote {color: lightsteelblue;margin-top: 200px; margin-bottom: 200px; padding-left: 400px; padding-right: 400px;}
@@ -25,6 +26,26 @@
                     background-image: radial-gradient(black, white, black, white, red);
                 }
             }
+            @keyframes imageAppear {
+                0% {
+                    opacity: 0%;
+                    margin-right: 20%;
+                }
+                100% {
+                    opacity: 100%;
+                    margin-right: 0%;
+                }
+            }
+            @keyframes pizzaAnim {
+                0% {
+                    opacity: 0%;
+                    margin-left: 20%;
+                }
+                100% {
+                    opacity: 100%;
+                    margin-left: 0%;
+                }
+            }
         </style>
     </head>
     <body>
@@ -32,7 +53,7 @@
         <script src = "scripts/Alerts.js"></script>
         <div>
             <h1>Start making money TODAY with this&reg; free online course.</h1>
-            <img alt = "Big Dollar" src = "images/bigDollar.jpeg" width = 200 height = 200>
+            <img alt = "Big Dollar" id = "money" src = "images/bigDollar.jpeg" width = 200 height = 200>
             <p>This course will teach you businessbasics&trade;</p>
         </div>
         <div>
