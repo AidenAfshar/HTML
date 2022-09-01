@@ -12,7 +12,7 @@
             h1 {color: royalblue; text-shadow: 0 0 5px #c32148;}
             #money {animation: imageAppear 2s;}
             p {color: darkkhaki; margin-left: 20%; margin-right:  20%;}
-            body {text-align: center; animation: strobe .2s infinite; background-image: radial-gradient(blue, red, purple, pink, yellow);}
+            body {text-align: center; animation: strobe .2s infinite; background-image: radial-gradient(blue, red, purple, pink, yellow); animation-play-state: var(playstate,running;}
             img {width: 500px; height: 200px; animation: pizzaAnim 2s;}
             h1 {color: royalblue; text-shadow: 0 0 4px #c32148;}
             p {color: darkkhaki; margin-left: 20%; margin-right:  20%;}
@@ -53,8 +53,11 @@
         </style>
     </head>
     <body>
-        <!-- Note: the glitch effect caused by putting the alert script was not intentional, but adds good effect, should I leave it? -->
+        <!-- Note: the glitch effect caused by putting the alert script was not intentional, but adds goosd effect, should I leave it? -->
         <script src = "scripts/Alerts.js"></script>
+        <script src = "ChooseFlashSpeed.js"></script>
+        <input type = "button" id = "flashOn" value = "flashing background on">
+        <input type = "button" id = "flashOff" value = "flashing background off">
         <div>
             <h1>Start making money TODAY with this&reg; free online course.</h1>
             <img alt = "Big Dollar" id = "money" src = "images/bigDollar.jpeg" width = 200 height = 200>
