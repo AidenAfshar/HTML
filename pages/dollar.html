@@ -18,6 +18,7 @@
             #America {background-image: linear-gradient(red, white, blue);}
             #CPlusDesc {text-align: left; font-size: 10px;}
             strong {background-image: linear-gradient(to right, darkgreen, darkred, yellow, darkorange);}
+            #important {color:  brown; outline-style: double; animation: importantText .8s infinite;}
             img {width: 30px; height: 20px; opacity: 0.1; margin-right: 90%;}
             img:hover {opacity: 1}
             iframe {width: 1000px; height: 1000px}
@@ -47,6 +48,23 @@
                     opacity: 100%;
                     margin-right: 0%;
                 }
+            }
+            @keyframes importantText {
+                0% {
+                    outline-color: green;
+                    color: yellow;
+                }
+                50% {
+                    color: pink;
+                    outline-style: dashed;
+                    background-image: linear-gradient(red, green);
+                }
+                100% {
+                    color: orange;
+                    outline-color: yellow;
+                    outline-style: dotted
+                }
+            }
         </style>
     </head>
     <body>
@@ -54,7 +72,7 @@
             <strong>Hustling collegiate group</strong>
         <a/>
         <h1> MakeMoney Now </h1>
-        <h2> you wlil regret buying 10.5 % this course </h2>
+        <h2> &#9757 click this link to claim your prize!!!! &#9757 </h2>
         <table>
             <tr>
                 <th id = "America">People in America</th>
@@ -70,6 +88,8 @@
         </table>
         <iframe src="https://www.ginx.tv/en/tiktok/is-andrew-tate-hustlers-university-a-pyramid-scheme" title="The end of an era: hustler's death"></iframe>
         <br>
+        <h2 id = "important"> there is something VERY IMPORTANT at the bottom of this page. Scroll down for a life changing experience</h2>
+        <br/>
         <img id = "bottompage" alt = "go down" onclick = "scrollToBottom()" type="text/javascript" src = "../images/arrow.png"/>
         <footer>
             <p>
