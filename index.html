@@ -16,6 +16,7 @@
             .Pizza:hover {opacity: 1; color: blue; background-image: url("images/pizza.jpeg"); outline-color: saddlebrown;}
             blockquote {color: lightsteelblue;magin-top: 200px; margin-bottom: 200px; padding-left: 400px; padding-right: 400px;}
             ol, ul {color: darkorchid; list-style-position: inside;}
+            #userInfo {font-size: 40px; color: white; outline-color: black; text-shadow: 4px 2px #ff0000;animation: titleStrobe linear 3s infinite;}
             @keyframes strobe {
                 20% {
                     background-image:  url("images/pizza.jpeg");   
@@ -25,6 +26,20 @@
                 }
                 80% {
                     background-image: linear-gradient(white, black, red, black, brown);
+                }
+            }
+            @keyframes titleStrobe {
+                00%{
+                    margin-right: 0px;
+                    margin-left: 300px;
+                }
+                50%{
+                    margin-right: 300px;
+                    margin-left: 0;
+                }
+                100%{
+                    margin-right: 0px;
+                    margin-left: 300px;
                 }
             }
         </style>
@@ -41,7 +56,9 @@
             <p>This course will teach you businessbasics&trade;</p>
         </div>
         <div>
-            <h3 class = "Pizza">50 reasons</h3>
+            <a href = "https://www.art.yale.edu/">
+                <h3 class = "Pizza">50 reasons</h3>
+            </a>
             <ol class = "Pizza">
                 <li>Citizen Kane (1941) Citizen Kane (1941) ... </li>
                 <li>Casablanca (1942) Casablanca (1942) ... </li>
@@ -65,6 +82,7 @@
             <blockquote>
                 Mothe salvation Restore the Center Sun Reaching Balanching our vision You are of ince Restore of intuition ther seeks Traver-communication Rise 2] We with ther Sun Rooted to me [Verse 1] Begin hyper-echoing out from yource The ebb and flow Intuition Rooted sets place finds its in all be the ebb and flow Intuition Intuition speak to reclaim the lance The Mothe Mothe ebb and flow Intuition the Mothe lanception the ebb and flow Drift will be the ebb and flow Intuition ther [Verse 3] Contrived to in Br
             </blockquote>
+            <p id = "userInfo"></p>
             <input type = "button" id = "audioplayer" value = "&#254;">
         </div>
         <script src = "scripts/Alerts.js"></script>
