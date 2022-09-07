@@ -1,0 +1,1 @@
+For my "advanced HTML" portion of this project, I chose to focus on doing both advanced CSS (animations, advanced properties, etc) and some basic Jacascript integration (alerts, modifying properties through buttons, etc).
